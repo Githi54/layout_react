@@ -1,8 +1,12 @@
 .header {
   display: flex;
-  width: 90vw;
   justify-content: space-between;
   align-items: baseline;
+
+  width: 90vw; 
+  max-width: 1200px;
+
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -40,4 +44,25 @@
   cursor: pointer;
 
   transform: rotate(19.5deg);
+
+  animation: roll 1s linear;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(100%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0%) rotate(360deg);
+  }
+}
+
+@media (max-width: 999px) {
+  .header__buy {
+    width: 53px;
+    height: 53px;
+
+    font-size: 17px;
+    line-height: 25px;
+  }
 }
