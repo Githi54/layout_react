@@ -1,0 +1,22 @@
+.navigation {
+  height: 21px;
+  width: 600px;
+  list-style-type: none;
+}
+
+.navigation__list {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-decoration: none;
+  color: #000000;
+}
