@@ -20,6 +20,8 @@
 .chip__container {
   display: flex;
   flex-direction: column;
+
+  justify-content: left;
 }
 
 .chip__content {

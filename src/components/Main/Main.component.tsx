@@ -7,6 +7,12 @@ export const Main = () => {
       <div className="main__container">
         <div className="main__content_container">
           <Chips />
+          <div className="main__text_container">
+            <span className="main__text">
+              Choose your winter{" "}
+              <div className="main__text_special">look</div> apparel
+            </span>
+          </div>
         </div>
       </div>
     </main>
