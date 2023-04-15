@@ -4,6 +4,7 @@
   align-items: baseline;
 
   width: 90vw;
+  min-width: 200px;
   max-width: 1200px;
 }
 
@@ -45,7 +46,7 @@
   transform: rotate(19.5deg);
   transition: color 500ms ease;
 
-  animation: roll 3s linear;
+  animation: roll 2s linear;
 }
 
 .header__buy:hover {

@@ -2,21 +2,11 @@ import "./Header.component.css";
 import { Navigation } from "../Navigation";
 import { useState, useEffect } from "react";
 
-export const Header = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+type Props = {
+  windowWidth: number;
+};
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  
+export const Header: React.FC<Props> = ({ windowWidth }) => {
   return (
     <header className="header">
       <p className="header__logo">Landing</p>
