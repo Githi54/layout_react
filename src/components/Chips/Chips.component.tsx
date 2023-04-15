@@ -1,5 +1,5 @@
-import AppleSVG from "../../assets/apple.svg";
-import AndroidSVG from "../../assets/android.svg";
+import AppleSVG from "./assets/apple.svg";
+import AndroidSVG from "./assets/android.svg";
 import "./Chips.component.css";
 
 export const Chips = () => {

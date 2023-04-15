@@ -27,13 +27,13 @@
   margin-left: 25px;
   display: inline-block;
   max-width: 200px;
-  border: 1px solid lightgreen;
+  border: 1px solid greenyellow;
   border-radius: 5px;
 
   animation: special 1s ease-in-out 1;
   transform: rotate(10.48deg);
 
-  background-color: lightgreen;
+  background-color: greenyellow;
 }
 
 @keyframes special {
@@ -44,8 +44,8 @@
   }
   100% {
     transform: rotate(10.48deg);
-    border-color: lightgreen;
-    background-color: lightgreen;
+    border-color: greenyellow;
+    background-color: greenyellow;
   }
 }
 
