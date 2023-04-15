@@ -1,0 +1,39 @@
+.chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 55px;
+  width: 55px;
+
+  border: 2px solid #e1e3e9;
+  border-radius: 50%;
+
+  background-color: #2d3240;
+}
+
+.chip__logo {
+  height: 25px;
+  width: 25px;
+}
+
+.chip__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chip__content {
+  display: flex;
+}
+
+.chip__android {
+  position: relative;
+  right: 15px;
+}
+
+.chip__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}

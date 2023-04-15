@@ -2,11 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
-  width: 90vw; 
-  max-width: 1200px;
-
-  margin: 0 auto;
 }
 
 .header__logo {
@@ -39,18 +34,29 @@
   color: #ffffff;
 
   border-radius: 50%;
+  border-color: transparent;
   background: #f54329;
 
   cursor: pointer;
 
   transform: rotate(19.5deg);
+  transition: color 500ms ease;
 
-  animation: roll 1s linear;
+  animation: roll 3s linear;
+}
+
+.header__buy:hover {
+  background-color: #ffffff;
+  color: #f54329;
+}
+
+.header__buy:active {
+  border-color: black;
 }
 
 @keyframes roll {
   0% {
-    transform: translateX(100%) rotate(0deg);
+    transform: translateX(-800%) rotate(0deg);
   }
   100% {
     transform: translateX(0%) rotate(360deg);
@@ -58,6 +64,10 @@
 }
 
 @media (max-width: 999px) {
+  .header {
+    width: 70vw;
+  }
+
   .header__buy {
     width: 53px;
     height: 53px;
