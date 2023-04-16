@@ -9,7 +9,7 @@ type Props = {
 export const Header: React.FC<Props> = ({ windowWidth }) => {
   return (
     <header className="header">
-      <p className="header__logo">Landing</p>
+      <a href="/" className="header__logo">Landing</a>
       {windowWidth >= 1000 && <Navigation />}
       <button className="header__buy">Buy</button>
     </header>

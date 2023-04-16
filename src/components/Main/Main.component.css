@@ -23,6 +23,8 @@
   text-align: left;
 }
 
+
+
 .main__text_special {
   margin-left: 25px;
   display: inline-block;
@@ -76,12 +78,9 @@
 
   position: relative;
   right: 50px;
-
-  margin-bottom: 85px;
+  bottom: 145px;
 
   z-index: -5;
-
-  object-fit: contain;
 }
 
 .main__draw {
@@ -98,5 +97,15 @@
 @keyframes drawLine {
   to {
     stroke-dashoffset: 0; 
+  }
+}
+
+@media (max-width: 600px) {
+  .main__text_container {
+    max-width: 220px;
+  }
+
+  .main__line_container {
+    width: min-content;
   }
 }

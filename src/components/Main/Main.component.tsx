@@ -1,5 +1,4 @@
 import { Chips } from "../Chips";
-import Line from "../../assets/line.svg";
 import "./Main.component.css";
 import { useEffect, useRef } from "react";
 
@@ -13,6 +12,10 @@ export const Main = () => {
       return rect?.top! < window.innerHeight && rect?.bottom! >= 0;
     };
 
+    if (element !== null && isInViewport()) {
+      element.style.animationPlayState = "running";
+    }
+
     const handleScroll = () => {
       if (element !== null && isInViewport()) {
         element.style.animationPlayState = "running";
@@ -24,7 +27,7 @@ export const Main = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [elementRef]);
 
   return (
     <main className="main">

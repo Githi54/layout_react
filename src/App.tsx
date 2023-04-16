@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,6 +23,7 @@ function App() {
     <div className="app_container">
       <Header windowWidth={windowWidth} />
       <Main />
+      <Footer />
     </div>
   );
 }

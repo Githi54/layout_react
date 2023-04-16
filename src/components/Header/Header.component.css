@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: baseline;
 
+  margin-top: 25px;
+
   width: 90vw;
   min-width: 200px;
   max-width: 1200px;
@@ -13,6 +15,7 @@
   height: 29px;
 
   text-transform: uppercase;
+  text-decoration: none;
   font-family: "Jomhuria";
   font-style: normal;
   font-weight: 400;
@@ -44,7 +47,7 @@
   cursor: pointer;
 
   transform: rotate(19.5deg);
-  transition: color 500ms ease;
+  transition: color 1s ease;
 
   animation: roll 2s linear;
 }
